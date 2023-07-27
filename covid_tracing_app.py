@@ -92,3 +92,9 @@ def create_gui():
     search_button.place(x=300, y=220)
 
     root.mainloop()
+
+if __name__ == "__main__":
+    if not os.path.exists(DATA_FILE):
+        with open(DATA_FILE, "w"):  # Create the data file if it doesn't exist
+            pass
+    create_gui()
