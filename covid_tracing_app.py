@@ -76,3 +76,6 @@ def create_gui():
     contact_label.place(x=50, y=140)
     contact_entry = tk.Entry(root)
     contact_entry.place(x=150, y=140)
+
+    submit_button = tk.Button(root, text="Submit", command=submit_data)
+    submit_button.place(x=150, y=180)
