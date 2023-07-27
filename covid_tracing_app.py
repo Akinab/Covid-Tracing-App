@@ -90,3 +90,5 @@ def create_gui():
 
     search_button = tk.Button(root, text="Search", command=search_data)
     search_button.place(x=300, y=220)
+
+    root.mainloop()
