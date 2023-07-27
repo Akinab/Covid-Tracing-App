@@ -51,3 +51,5 @@ def create_gui():
     root = tk.Tk()
     root.title("COVID Contact Tracing App")
     root.geometry("500x300")
+
+    # Set a background image
