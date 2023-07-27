@@ -56,3 +56,8 @@ def create_gui():
     background_image = tk.PhotoImage(file="background.png")
     background_label = tk.Label(root, image=background_image)
     background_label.place(x=0, y=0, relwidth=1, relheight=1)
+
+    name_label = tk.Label(root, text="Name:")
+    name_label.place(x=50, y=50)
+    name_entry = tk.Entry(root)
+    name_entry.place(x=150, y=50)
