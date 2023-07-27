@@ -9,3 +9,11 @@ def submit_data():
     location = location_entry.get()
     date = date_entry.get()
     contact = contact_entry.get()
+
+    if name and location and date and contact:
+        with open(DATA_FILE, "a") as file:
+            file.write(f"{name},{location},{date},{contact}\n")
+        messagebox.showinfo("Data Submitted", "Contact tracing information saved successfully!")
+        clear_entries()
+    else:
+        messagebox.showerror("Error", "Please fill out all fields.")
