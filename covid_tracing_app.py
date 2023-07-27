@@ -17,3 +17,9 @@ def submit_data():
         clear_entries()
     else:
         messagebox.showerror("Error", "Please fill out all fields.")
+
+def clear_entries():
+    name_entry.delete(0, tk.END)
+    location_entry.delete(0, tk.END)
+    date_entry.delete(0, tk.END)
+    contact_entry.delete(0, tk.END)
