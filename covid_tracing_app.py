@@ -23,3 +23,6 @@ def clear_entries():
     location_entry.delete(0, tk.END)
     date_entry.delete(0, tk.END)
     contact_entry.delete(0, tk.END)
+
+def search_data():
+    search_name = search_entry.get()
