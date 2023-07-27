@@ -44,3 +44,10 @@ def format_search_results(entries):
     for entry in entries:
         results += f"Name: {entry[0]}, Location: {entry[1]}, Date: {entry[2]}, Contact: {entry[3]}\n"
     return results
+
+def create_gui():
+    global name_entry, location_entry, date_entry, contact_entry, search_entry
+
+    root = tk.Tk()
+    root.title("COVID Contact Tracing App")
+    root.geometry("500x300")
