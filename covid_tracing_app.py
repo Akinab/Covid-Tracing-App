@@ -29,3 +29,7 @@ def search_data():
     if not search_name:
         messagebox.showerror("Error", "Please enter a name to search.")
         return
+    
+    with open(DATA_FILE, "r") as file:
+        lines = file.readlines()
+        found_entries = [line.strip().split(",") for line in lines if search_name.lower() in line.lower()]
