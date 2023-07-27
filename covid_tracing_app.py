@@ -66,3 +66,8 @@ def create_gui():
     location_label.place(x=50, y=80)
     location_entry = tk.Entry(root)
     location_entry.place(x=150, y=80)
+
+    date_label = tk.Label(root, text="Date:")
+    date_label.place(x=50, y=110)
+    date_entry = tk.Entry(root)
+    date_entry.place(x=150, y=110)
