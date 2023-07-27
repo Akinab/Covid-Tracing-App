@@ -71,3 +71,8 @@ def create_gui():
     date_label.place(x=50, y=110)
     date_entry = tk.Entry(root)
     date_entry.place(x=150, y=110)
+
+    contact_label = tk.Label(root, text="Contact:")
+    contact_label.place(x=50, y=140)
+    contact_entry = tk.Entry(root)
+    contact_entry.place(x=150, y=140)
