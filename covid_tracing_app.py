@@ -53,3 +53,6 @@ def create_gui():
     root.geometry("500x300")
 
     # Set a background image
+    background_image = tk.PhotoImage(file="background.png")
+    background_label = tk.Label(root, image=background_image)
+    background_label.place(x=0, y=0, relwidth=1, relheight=1)
