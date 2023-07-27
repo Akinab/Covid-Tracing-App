@@ -61,3 +61,8 @@ def create_gui():
     name_label.place(x=50, y=50)
     name_entry = tk.Entry(root)
     name_entry.place(x=150, y=50)
+
+    location_label = tk.Label(root, text="Location:")
+    location_label.place(x=50, y=80)
+    location_entry = tk.Entry(root)
+    location_entry.place(x=150, y=80)
