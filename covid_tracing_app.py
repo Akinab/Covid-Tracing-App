@@ -26,3 +26,6 @@ def clear_entries():
 
 def search_data():
     search_name = search_entry.get()
+    if not search_name:
+        messagebox.showerror("Error", "Please enter a name to search.")
+        return
