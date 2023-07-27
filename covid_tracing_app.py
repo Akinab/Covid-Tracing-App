@@ -38,3 +38,9 @@ def search_data():
         messagebox.showinfo("Search Results", format_search_results(found_entries))
     else:
         messagebox.showinfo("Search Results", "No matching entries found.")
+
+def format_search_results(entries):
+    results = "Search Results:\n"
+    for entry in entries:
+        results += f"Name: {entry[0]}, Location: {entry[1]}, Date: {entry[2]}, Contact: {entry[3]}\n"
+    return results
