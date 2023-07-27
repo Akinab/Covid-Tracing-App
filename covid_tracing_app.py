@@ -82,3 +82,8 @@ def create_gui():
 
     clear_button = tk.Button(root, text="Clear", command=clear_entries)
     clear_button.place(x=230, y=180)
+
+    search_label = tk.Label(root, text="Search by Name:")
+    search_label.place(x=50, y=220)
+    search_entry = tk.Entry(root)
+    search_entry.place(x=150, y=220)
