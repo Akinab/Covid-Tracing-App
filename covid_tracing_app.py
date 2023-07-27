@@ -33,3 +33,8 @@ def search_data():
     with open(DATA_FILE, "r") as file:
         lines = file.readlines()
         found_entries = [line.strip().split(",") for line in lines if search_name.lower() in line.lower()]
+
+    if found_entries:
+        messagebox.showinfo("Search Results", format_search_results(found_entries))
+    else:
+        messagebox.showinfo("Search Results", "No matching entries found.")
