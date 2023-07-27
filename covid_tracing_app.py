@@ -79,3 +79,6 @@ def create_gui():
 
     submit_button = tk.Button(root, text="Submit", command=submit_data)
     submit_button.place(x=150, y=180)
+
+    clear_button = tk.Button(root, text="Clear", command=clear_entries)
+    clear_button.place(x=230, y=180)
